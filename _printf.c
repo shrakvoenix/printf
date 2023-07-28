@@ -3,16 +3,12 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - Cstom printf func.
- *
- * @format: For format string containing the specifiers.
- * Just like "%d", "%s", "%c", etc.
- * It can include escape sequences as "\n".
- *
- * Return: The number of characters printed (excluding the null byte
- *  to end output to strings).
+ * _printf - Custom func.
+ * @format: The format string.
+ * Return: The number of printed characters.
  */
-int _printf(const char *format...)
+
+int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size
